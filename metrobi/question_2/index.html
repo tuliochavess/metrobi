@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Question 2</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Type 4 values</h1>
+      <form>
+        <label for="value1">Value 1:</label>
+        <input type="text" id="value1" name="value1" />
+
+        <label for="value2">Value 2:</label>
+        <input type="text" id="value2" name="value2" />
+
+        <label for="value3">Value 3:</label>
+        <input type="text" id="value3" name="value3" />
+
+        <label for="value4">Value 4:</label>
+        <input type="text" id="value4" name="value4" />
+
+        <input
+          id="button"
+          type="button"
+          value="generate"
+          onclick="generate()"
+        />
+      </form>
+
+      <div class="results">
+        <span class="resultTitle"></span>
+        <span class="resultText"></span>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

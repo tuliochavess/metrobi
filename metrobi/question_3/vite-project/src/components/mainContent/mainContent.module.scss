@@ -1,0 +1,20 @@
+.mainContentContainer {
+  background-color: #f5c632;
+  width: calc(60% - 6px);
+  display: flex;
+  height: 350px;
+  justify-content: center;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  margin: 0 52px;
+  text-align: center;
+}
+
+h1,
+p {
+  color: #fff;
+}

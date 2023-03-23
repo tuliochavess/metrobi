@@ -1,0 +1,55 @@
+@import url("https://rsms.me/inter/inter.css");
+html {
+  font-family: "Inter", sans-serif;
+  color: #0e0e10;
+}
+
+body {
+  margin: 52px;
+  font-weight: 600;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  max-width: 300px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+label {
+  font-size: 16px;
+}
+
+input[type="button"] {
+  margin-top: 52px;
+  background: #1d1f8c;
+  border-radius: 4px;
+  color: #fff;
+  font-family: "Inter", sans-serif;
+  cursor: pointer;
+}
+
+input[type="button"]:hover {
+  background: #eaeafb;
+  border: 1px solid #1d1f8c;
+  color: #1d1f8c;
+}
+
+.results {
+  margin-right: 6px;
+}
+
+h2 {
+  margin-right: 12px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+}
