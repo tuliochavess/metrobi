@@ -17,17 +17,23 @@ async function generate() {
 }
 
 async function showArrayWithDelay(array) {
-  let time = 1000;
   const span = document.querySelector(".resultText");
 
   const button = document.getElementById("button");
   disableButtonForXtime(button);
-  
-  for (let i = 0; i < array.length; i++) {
-    await new Promise((x) => setTimeout(x, time));
-    span.textContent += array[i] + " ";
-    time *= 2;
-  }
+
+  const delayTime = [1000, 3000, 7000, 15000];
+
+  const promise = delayTime.map((time, i) => {
+    return new Promise((x) => {
+      setTimeout(() => {
+        span.textContent += array[i] + " ";
+        x();
+      }, time);
+    });
+  });
+
+  await Promise.all(promise);
 }
 
 function disableButtonForXtime(button) {
